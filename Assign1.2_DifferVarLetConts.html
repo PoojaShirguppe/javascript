@@ -1,0 +1,54 @@
+<html> 
+	<h2>Difference between var, let and const variables</h2>
+	<body> 
+		<script> 
+			//function scope of carName
+			function myFunction() 
+			{
+				var carName = "Volvo";
+				// code here CAN use carName
+			}
+			// code here can NOT use carName
+			
+			document.write("..var variables..", "<br>"); 
+			//declared x in block but used throughout program..
+			{
+				var x = 5; 
+				document.write("value of x = ",x, "<br>"); 
+			}
+			document.write("value of x = ",x, "<br><br>");//print 5 ...scope throughout the program
+			
+			
+			
+			//block scope of let variables
+			document.write("..let variables..", "<br>"); 
+			{
+				let y = 10; 
+				document.write("value of y = ",y, "<br><br>"); 
+			}
+			//document.write(y, "\n"); error out of scope
+			
+			
+			
+			//const variables
+			document.write("..const variables..", "<br>"); 
+			/***JavaScript const variables must be assigned a value when they are declared:
+				const PI;
+				PI = 3.14159265359; 
+				const PI= 3.14159265359;*/
+			
+			//****Variables defined with const behave like let variables, 
+			//except they cannot be reassigned:
+			const PI = 3.14;
+			document.write("value of PI = ",PI);
+			//PI = 3.14;      This will give an error error
+			
+			//redeclaring in block is allowed...
+			const c = 2;      
+			{
+			  const c = 3;   // Allowed
+			}
+			
+		</script> 
+	</body>   
+</html>  

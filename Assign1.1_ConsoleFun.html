@@ -1,0 +1,56 @@
+<html>
+    <h1>Exploring console functions...</h1>
+    <body>
+        <script>
+			//Starts a timer (can track how long an operation takes)
+			console.time();		
+		
+            //output on console
+            console.log("This a simle 'console.log' used to output on console"); 
+
+            //Logs the number of times that this (same)particular call to count() has been called
+            console.count(); //1
+            console.count(); //2
+            console.count("ABC");   //1
+            console.count("ABC");   //2
+            console.count();  //3
+
+            //Outputs an error message to the console
+            console.error("Error is occuered");
+			
+			//Outputs a warning message to the console
+			console.warn("This is Warning msg");
+
+            //Creates a new inline group in the console. 
+            //This indents following console messages by an additional level, until console.groupEnd() is called
+            console.group("stud details");
+                 console.log("Pooja shirguppe");
+                 console.log("Priya Shirguppe");
+                 // Nested group
+                 //Creates a new inline group in the console. However, the new group is created collapsed. 
+                 //The user will need to use the disclosure button to expand it
+                 console.groupCollapsed("pooja Shirguppe"); 
+                     console.log("SGI");
+                     console.log("BE");
+                console.groupEnd();
+            console.groupEnd();   //Exits the current inline group in the console
+
+            //Outputs an informational message to the console
+            console.info("This is demo of console functions..");
+            
+            //tabular form
+            let stud1 = { name : "Pooja", branch : "cse" }
+            let stud2 = { name : "Priya", branch : "Etc" }
+            let stud3 = { name : "Pratik", branch : "Civil" }
+            console.table([stud1, stud2, stud3]);
+			
+			//	Stops a timer that was previously started by console.time()
+			console.timeEnd();
+			
+			//console.assert();
+			
+			//Clears the console
+            //console.clear();
+        </script>
+    </body>
+</html>

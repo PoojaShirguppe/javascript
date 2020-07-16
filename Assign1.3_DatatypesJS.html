@@ -1,0 +1,72 @@
+<!--Primitive
+	1. Number  
+	2. String
+	3. Boolean
+	4. Bigint
+	5. null 
+	6. undefined
+
+	Reference
+	1. Array  
+	2. Functions   
+	3. Objects  -->
+<html>
+	<body>
+		<script>
+			//number
+			let num = 25;
+			console.log(num, typeof num)
+
+			let num1 = 123.854;
+			console.log(num1, typeof num1)
+			
+			//string
+			let str = "Pooja";
+			console.log(str, typeof str);
+			
+			// Boolean
+
+			let canDrive = false;
+			console.log(canDrive, typeof canDrive);
+			
+			//Bigint   biginteger
+			let numb = 1235485n;
+			console.log(numb, typeof numb);
+	
+			//null
+			let nullvar = null;
+			console.log(nullvar, typeof nullvar);
+			
+			//undefined
+			let a;
+			a = undefined;
+			console.log(a, typeof a);
+			
+			//Array
+			var names = ["pooja", "priya", "pratik"];
+			console.log(names[0]);
+			console.log(names);
+			//var names2 = new Array("pooja2", "priya2", "pratik2");
+			//console.log(names);
+
+			//Functions  
+			function myFunction(a, b) {
+			  return a * b;             // Function returns the product of a and b
+			}
+			console.log(myFunction(4, 3));   // Function is called
+			
+			
+			//Objects
+			var person1 = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+			console.table(person1);
+			
+			var person2 = new Object();
+			person2.firstName = "John2";
+			person2.lastName = "Doe2";
+			person2.age = 500;
+			person2.eyeColor = "blue";
+			console.table(person2);
+			
+		</script>
+	</body>
+</html>
