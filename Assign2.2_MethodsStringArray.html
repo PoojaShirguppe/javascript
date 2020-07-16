@@ -1,0 +1,91 @@
+<html>
+	<body>
+		<script>
+		//String methods
+			var str1="pooja Shirguppe";
+			//var str2= "Please locate where 'locate' occurs!";
+			console.log("length is = "+str1.length);
+					
+			console.log(str1.indexOf("p"));
+			
+			console.log(str1.lastIndexOf("o"));
+			//Both methods accept a second parameter as the starting position for the search:
+			//Both indexOf(), and lastIndexOf() return -1 if the text is not found.
+
+			console.log(str1.indexOf("o", 2));
+			console.log(str1.lastIndexOf("o", 1));
+			
+			/*The search() method cannot take a second start position argument.
+			The indexOf() method cannot take powerful search values (regular expressions).*/
+			
+			console.log(str1.search("p"));
+			
+			console.log(str1.slice(0, 5));//slices out a portion of a string from position 0 to position 4 (5-1):
+			console.log(str1.slice(-4, -1));
+			console.log(str1.slice(5));//If you omit the second parameter, the method will slice out the rest of the string:
+			
+			//The difference is that substring() cannot accept negative indexes.
+			console.log(str1.substring(0, 5));
+			
+			console.log(str1.substr(0,5));//substr() is similar to slice().
+			//The difference is that the second parameter specifies the length of the extracted part.
+			
+			console.log(str1.replace("pooja", "pooo")); //replaces only the first match:
+			
+			console.log(str1.toLowerCase());
+			console.log(str1.toUpperCase());  
+			
+			let str2="from htk";
+			console.log(str1.concat(" ", str2));
+			
+			let str3="      pooja";
+			console.log(str3.trim());
+			
+			console.log(str1.charAt(0)); 
+			console.log(str1.charCodeAt(0)); 
+
+			console.log(str1.split(""));           // Split in characters
+			
+		//Array methods
+			var names = ["pooja", "priya", "pratik", "ranjana"];
+			var surnm = ["shirguppe", "kamate", "patil"];
+			var city = ["htk", "kop", "sangli"];
+			console.log(names.toString());
+			
+			//It behaves just like toString(),but in addition you can specify the separator:
+			console.log(names.join(" - "));
+			
+			 //The pop() method removes the last element from an array:
+			//The pop() method returns the value that was "popped out":
+			console.log(names.pop());
+
+			 //The push() method adds a new element to an array (at the end):
+			//The push() method returns the new array length:
+			console.log(names.push("ranjana"));
+
+			//The shift() method removes the first array element and "shifts" all other elements to a lower index.
+			console.log(names.shift()); 
+			
+			//The unshift() method adds a new element to an array (at the beginning), 
+			//and "unshifts" older elements:
+			console.log(names.unshift("Pooja"));
+			
+			names.splice(1, 2, "xyz", "abc");
+			console.log(names);
+			
+			console.log(names.concat(surnm));
+			console.log(names.concat(surnm,city));
+
+			var namedup=names.slice(0,2);
+			console.log(namedup);
+			
+			console.log(names.slice(2));
+			
+			console.log(names.sort());
+		
+			console.log(names.reverse());
+
+			
+		</script>
+	</body>
+</html>
