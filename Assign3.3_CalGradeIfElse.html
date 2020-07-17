@@ -1,0 +1,26 @@
+<html>
+	<body>
+		<script>
+
+			let findGrade = function(marks){
+			if(marks>100)
+				return "plzz enter correct marks";
+			
+			else if(marks>80)
+				return "Marks are " + marks +" and grade is A ";
+			
+			else if(marks>60 && marks<=80)
+				return "Marks are " + marks +" and grade is B ";
+				
+			else if(marks>40 && marks<=60)
+				return "Marks are " + marks +" and grade is c ";	
+				
+			else
+				return "Marks are " + marks +" and grade is fail ";
+			}
+			var marks=window.prompt("Enter your marks out of 100 ");
+			let garde = findGrade(marks);
+			console.log(garde)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<script>
+
+			let findGrade = function(marks)
+			{
+			let grade=(marks>100)?"plzz enter correct marks":(marks>80)?"Marks are " + marks +" and grade is A ":(marks>60 && marks<=80)?"Marks are " + marks +" and grade is B ":(marks>40 && marks<=60)?"Marks are " + marks +" and grade is C ":"Marks are " + marks +" and grade is fail ";	
+			return grade;
+			}
+			var marks=window.prompt("Enter your marks out of 100");
+			let garde = findGrade(marks);
+			console.log(garde);	
+		</script>
+	</body>
+</html>
